@@ -1,38 +1,387 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #F4F5F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+
+.first-page {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 1);
+  height: 1158px;
+  width: 1440px;
+  left: -1148px;
+  /* top: 253px; */
+  border-radius: 0px;
+
+}
+
+
+
+
+.share-avatar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  margin-right: -500px;
+  /* margin-top: 20px; */
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  right: 500px;
+  top: -30px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.image {
+  height: 88px;
+  width: 88px;
+  left: 532px;
+  top: 0px;
+  border-radius: 275px;
+
+}
+
+.twitterusername {
+  /* //styleName: Text xl/Bold; */
+  font-family: Text xl/Bold;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.picxusername {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.linktree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+  margin-top: 20px;
+
+}
+
+.links {
+  height: 76px;
+  width: 1152px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  padding: 24px 32px 24px 32px;
+  background: rgba(234, 236, 240, 1);
+  font-family: Text lg/Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(16, 24, 40, 1);
+  text-decoration: none;
+}
+
+
+.links:hover{
+  background: rgb(187, 188, 190);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 1216px;
+  /* left: 112px; */
+  top: 862px;
+  border-radius: 0px;
+  padding: 24px 0px 24px 0px;
+  margin-top: 50px;
+}
+
+.icon {
+  height: 23.44611930847168px;
+  width: 24px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  margin-left: 20px;
+}
+
+
+
+
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 48px 0px;
+  gap: 64px;
+
+  /* position: absolute; */
+  width: 1440px;
+  height: 160px;
+  left: 0px;
+  top: 998px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 32px 0px 0px;
+  gap: 32px;
+  width: 1216px;
+  height: 64px;
+}
+
+
+.middle {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 32px;
+
+  width: 1280px;
+  height: 64px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.desktop-view {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+
+
+
+
+
+
+
+
+/* for mobile */
+@media screen and (max-width: 425px) {
+  .desktop-view {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Mobile-view {
+    display: block;
+    position: relative;
+  }
+
+  .first-page {
+    height: 992px;
+    width: 375px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 14px 0px 32px 0px;
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .image {
+    height: 88px;
+    width: 88px;
+    left: 532px;
+    top: 0px;
+    border-radius: 275px;
+
+  }
+
+  .twitterusername {
+    /* //styleName: Text xl/Bold; */
+    font-family: Text xl/Bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+
+  }
+
+  .picxusername {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar {
+    height: 40px;
+    width: 40px;
+    right: 500px;
+    top: -30px;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+
+
+
+  .linktree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+
+  }
+
+  .link {
+    margin-top: 20px;
+
+  }
+
+  .links {
+    height: 68px;
+    width: 343px;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px;
+    padding: 24px 32px 24px 32px;
+    background: rgba(234, 236, 240, 1);
+    font-family: Text lg/Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(16, 24, 40, 1);
+    text-decoration: none;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 375px;
+    /* left: 112px; */
+    top: 862px;
+    border-radius: 0px;
+    padding: 24px 0px 24px 0px;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 0px 0px;
+    gap: 14px;
+
+    /* position: absolute; */
+    width: 375px;
+    height: 160px;
+    left: 0px;
+    top: 998px;
+  }
+
+  /* .container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 10px 0px 0px;
+    gap: 12px;
+  } */
+
+
+  .middle {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 0px 0px;
+    gap: 32px;
+
+    width: 375px;
+    height: 64px;
+  }
+
+  .vector1 {
+    height: 18.552810668945312px;
+    width: 138.7725830078125px;
+    left: 1.018310546875px;
+    top: 5.237060546875px;
+    border-radius: 0px;
+
+  }
+
+  .vector2 {
+    height: 24px;
+    width: 99.09677124023438px;
+    left: 0px;
+    top: 108px;
+    border-radius: 0px;
+
+  }
+  .share-avatar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    margin-right: -300px;
+    /* margin-top: 20px; */
+  }
+  
+  body{
+    padding: 0px;
+    align-items: flex-start;
+    justify-content: left;
+  }
+
+  .links:hover{
+    background: rgb(187, 188, 190);
+  
   }
 }
